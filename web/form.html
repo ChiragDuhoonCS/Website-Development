@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <! meta like which visible in search blue link(name) below(description) <! meta also used for tag <meta
+        charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="decription about">
+        <title>My First Website</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+
+<! id is unique in this 2 person cant have same username <body>
+    <h1>Form to apply for web dev course - TA</h1>
+    <form action="post">
+
+        <! div for line change can use br too but not recommand
+         <! name same in gender means at a time only one can select <div>
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" placeholder="Enter your username" autofocus>
+            </div>
+
+            <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <! for=input id so when we click male instead of circle it will pick <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <div>
+                <label for="comment">Enter your comment</label>
+                <br>
+                <textarea
+                    id="comment" <! always if use for
+
+                     rows="4"
+                     cols="30">
+                </textarea>
+            </div>
+
+            <select name="fruit">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="cherry">Cherry</option>
+</select>
+    </form>
+    </body>
+
+</html>
