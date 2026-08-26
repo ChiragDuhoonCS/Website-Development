@@ -7,10 +7,10 @@
     <style>
         /* Element Selector  */
         div{
-            /* background-color: red; */
+             background-color: red; 
         }
 
-        /* Class Selector  */
+        /*! Class Selector only with .red get this */
         .red{
             background-color: red;
         }
@@ -20,37 +20,38 @@
             background-color: green;
         }
 
-        /* Child Selectors  */
+        /* Child Selectors  div ka inside direct */
         div > p {
             color: blue;
             background-color: brown;
         }
 
-        /* Descendant Selector  */
+        /* Descendant Selector div ka inside indirect/direct dont care */
         div p {
             color: blue;
             background-color: brown;
         }
 
-        /* Universal Selector */
+        /* Universal Selector  means sara element */
         * {
             margin:0;
             padding: 0;
         }
 
         /* Pseudo Selector  */
-        a:visited{
+        /* when we visited link    */
+        a:visited{ 
             color: yellow
         }
 
         a:link {
             color: green;
         }
-
+       /*jab link ko click kar rha ho */ 
         a:active{
             background-color: red;
         }
-
+       /*jab link ko mouse sa hover kar rha ho */ 
         a:hover{
             background-color: yellow;
         }
