@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    /*& box model mai jyda element ki vja sa vo overflow krta hai so here its solution*/
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            /*@ overflow: auto; jab overflow kraga tabhe scroll bar melaga in auto
+            overflow-x: hidden;
+            overflow-y: scroll;
+            overflow: hidden auto;  same mean above two */
+            overflow: auto hidden;
+            /* white-space: nowrap;  no vertical scroll bar only horizontal
+            text-overflow: ellipsis; .... asa aa jata hai everything which overflow gone*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a good boy and I love to write Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta iure amet
+        unde voluptas nihil vero, maxime esse quis quos natus rem, earum aspernatur quasi aut ea commodi nostrum
+        voluptate! Sint rerum nostrum perferendis sapiente explicabo perspiciatis, ut magni? Aspernatur, provident
+        dolorum unde corporis doloribus rem!
+    </div>
+</body>
+
+</html>
