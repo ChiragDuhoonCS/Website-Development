@@ -19,11 +19,11 @@
             border: 2px solid black;
         }
 
-        p, a, .box, [data-color="primary"]{
+        p, a, .box, [data-color="primary"]{  &grouping
             padding-top: 45px;
         } */
 
-        /* .box:nth-child(odd){
+        /* .box:nth-child(odd){   see here counting start with 0
             background-color: blue;
         } */
 
@@ -31,7 +31,7 @@
             background-color: red;
         } */
 
-        .boxes::before {
+        .boxes::before { /*& boxes sa phala*/
             content: "Harry is good";
             color: blue;
         }
@@ -41,7 +41,7 @@
             color: red;
         }
 
-        ::selection {
+        ::selection { /* when select color like that*/
             background-color: black;
             color: aqua;
         }
