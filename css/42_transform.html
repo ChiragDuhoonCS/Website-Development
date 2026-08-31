@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>/* two type 2d and 3d   scale increase,rotate etc */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            transform: rotate(0.125turn); /* can use degree too  turn is out of 1 (360)*/
+            transform-origin: -50% -50%;
+            /* transform: rotateZ(9deg);  can rotate X Y Z*/
+            /* transform: scaleY(1.6);  scale that increse size*/
+            /* transform: skewY(34deg); thercha */
+            /* transform: translateY(100%) px mai translate  can be neg         skewX(40deg) translateX(45%); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            margin: 55px;
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+
+</html>
