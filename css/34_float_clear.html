@@ -6,11 +6,13 @@
     <title>CSS Float & Clear</title>
     <style>
         .cards{
+            /*dont use float and clear ever*/
+            
             border: 2px solid black;
-            display: flow-root;
+            display: flow-root; /* img wouldnt flow outside box*/
         }
         
-        img{
+        img{ /*img left ki side*/
             float:left;
         }
 
@@ -18,7 +20,8 @@
             border: 2px solid red;
         }
 
-        .card:nth-child(3){
+        .card:nth-child(3){ /* mera right or left koe element nhi chaiyaga*/
+
             background-color: aqua;
             clear:both;
         }
